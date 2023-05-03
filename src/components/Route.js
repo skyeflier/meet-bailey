@@ -2,16 +2,16 @@ import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 // import HomePage from './HomePage';
-import Header from './Header/Header';
+// import Header from './Header/Header';
 // import Header from './Header/Navbar'; //?? DO I IMPORT THIS?
 
-import AboutPage from './About';
-import ContactPage from './Contact';
-import ResumePage from './Resume';
-import PortfolioPage from './Portfolio/Portfolio';
+import About from './components/About';
+import Contact from './components/Contact';
+import Resume from './components/Resume';
+import Portfolio from './components/Portfolio/Portfolio';
 // import PortfolioPage from './Portfolio/Project'; // ?? DON'T THINK I IMPORT THIS
 
-import FooterPage from './Footer';
+// import Footer from './Footer'; // ?? DON'T THINK I IMPORT THIS
 
 
 function App() {
@@ -19,10 +19,10 @@ function App() {
         <BrowserRouter>
             <Switch>
                 {/* <Route exact path="/" component={HomePage} /> */}
-                <Route path="/about" component={AboutPage} />
-                <Route path="/contact" component={ContactPage} />
-                <Route path="/resume" component={ResumePage} />
-                <Route path="/portfolio" component={PortfolioPage} />
+                <Route path="/about" component={About} />
+                <Route path="/contact" component={Contact} />
+                <Route path="/resume" component={Resume} />
+                <Route path="/portfolio" component={Portfolio} />
             </Switch>
         </BrowserRouter>
     );

@@ -22,7 +22,14 @@ const styles = {
 function Footer() {
     return (
         <footer style={styles.footerStyle} className="footer">
-            <h1 style={styles.headingStyle}>Welcome</h1>
+            <div>
+                <h1 style={styles.headingStyle}>Welcome</h1>
+                <p>
+                    GitHub
+                    LinkedIn
+                    Email
+                </p>
+            </div>
         </footer>
     );
 }
