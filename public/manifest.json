@@ -1,19 +1,19 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Bailey Resume",
+  "name": "Meet Bailey - Resume",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "favicon.ico", // ADD FAVICON
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
     {
-      "src": "logo192.png",
+      "src": "logo192.png", // ADD IMAGE
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "logo512.png",
+      "src": "logo512.png", // ADD IMAGE
       "type": "image/png",
       "sizes": "512x512"
     }
