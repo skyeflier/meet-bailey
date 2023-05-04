@@ -1,6 +1,7 @@
 // CONSIDER RENAMING SECTION TO ABOUT
 import React from 'react';
 import '../styles/Section.css';
+import Reiners_Resume from '../Reiners_Resume.pdf';
 
 // By importing the Section.css file, it is added to the DOM whenever this component loads
 
@@ -15,13 +16,28 @@ const styles = {
     },
 };
 
+
+
 // We use JSX curly braces to evaluate the style object on the JSX tag
 
 function Resume() {
+    function DownloadResume() {
+        const ResumeInfo = Reiners_Resume
+        const blob = new Blob([ResumeInfo], { type: "application/pdf" })
+        const url = URL.createObjectURL(blob)
+        const a = document.createElement("a")
+        a.href = url
+        a.download = "Reiners_Resume.pdf"
+        a.click()
+        // URL.revokeObjectURL(url)
+    }
     return (
-        <section style={styles.sectionStyles} className="section">
+        <section id="resume" style={styles.sectionStyles} className="section">
             <h1>Bailey's Resume</h1>
             <h2>Download Bailey's Resume</h2>
+            <button onClick={DownloadResume}>
+                download
+            </button>
             <p>
                 Front-End web developer leveraging a background in SEO, content marketing, psychology and art history to provide unique perspectives on how end-users find and interact with websites. Earned a certificate in Full Stack Web Development from Vanderbilt University. Innovative problem-solver who is keen on developing apps optimized for SEO with responsive, mobile-first design and development. Strengths in creativity, teamwork, and building projects from ideation to execution.
 

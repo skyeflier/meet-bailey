@@ -1,5 +1,6 @@
 import React from 'react';
 import '../../styles/Header.css';
+import Navbar from './Navbar.js';
 
 // By importing the Header.css file, it is added to the DOM whenever this component loads
 
@@ -23,6 +24,7 @@ function Header() {
     return (
         <header style={styles.headerStyle} className="header">
             <h1 style={styles.headingStyle}>Header</h1>
+            <Navbar />
         </header>
     );
 }

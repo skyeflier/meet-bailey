@@ -19,7 +19,7 @@ const styles = {
 
 function About() {
     return (
-        <section style={styles.sectionStyles} className="section">
+        <section id="about" style={styles.sectionStyles} className="section">
             <h2>Hi! I'm Bailey</h2>
             <p>
                 I am a creative and results-driven search engine optimization (SEO) strategist with a background in psychology and art history. With a Bachelor of Arts from Lawrence University and experience working with global appliance brands such as Whirlpool, Kitchenaid, Maytag, and JennAir, I have honed my skills in developing effective SEO strategies to attract organic traffic and build the marketing pipeline.

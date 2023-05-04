@@ -46,7 +46,7 @@ function Form() {
   };
 
   return (
-    <div>
+    <div id="contact">
       <p>Hello {firstName}</p>
       <form className="form">
         <input
@@ -55,6 +55,7 @@ function Form() {
           onChange={handleInputChange}
           type="email"
           placeholder="Email"
+          required
         />
         <input
           value={firstName}
@@ -62,6 +63,7 @@ function Form() {
           onChange={handleInputChange}
           type="text"
           placeholder="First Name"
+          required
         />
         <input
           value={message}
@@ -69,6 +71,7 @@ function Form() {
           onChange={handleInputChange}
           type="text"
           placeholder="Message"
+          required
         />
         <button type="button" onClick={handleFormSubmit}>Submit</button>
       </form>
