@@ -1,49 +1,79 @@
-// Bored of my Job Board App :https://github.com/dannikaml/interactive-2
-// Ride or Die App: https://github.com/chwd31/Ride-or-Die-Cycling-App
-// Women in Aviation Blog: https://github.com/skyeflier/women-in-aviation-blog
-// Community Network: https://github.com/skyeflier/18-community-network
-// In And Out Inventory: https://github.com/skyeflier/13-in-and-out-inventory
-// Not Your Note Taker: https://github.com/skyeflier/11-not-your-note-taker
-
-// CONSIDER RENAMING SECTION TO ABOUT
 import React from 'react';
-import '../styles/Section.css';
+import '../../styles/Portfolio.css';
 import JobImage from './bored-of-my-job-board.jpg';
+import BicycleImage from './ride-or-die-app.jpg';
+import AviationImage from './women-in-aviation-blog.jpg';
+import CommunityImage from './community-network.jpg';
+import InventoryImage from './in-and-out-inventory.jpg';
+import NoteImage from './not-your-note-taker.jpg';
 
 console.log(JobImage);
 
-// By importing the Section.css file, it is added to the DOM whenever this component loads
-
-// We can also style a component inside of its JavaScript file by adding style properties to its rendered elements
-// Unlike regular HTML, a JSX style property must be an object instead of a string
-// On a style object, we camelCase all property names, and put all of the values in quotes
-// Non quoted values default to "pixels", e.g. height, margin, padding
-
-const styles = {
-    sectionStyles: {
-        background: 'purple',
-    },
-};
-
-// We use JSX curly braces to evaluate the style object on the JSX tag
-
 function Portfolio() {
+    const styles = {
+        portfolioStyles: {
+            display: 'flex',
+            flexWrap: 'wrap',
+            justifyContent: 'space-between',
+            backgroundColor: 'goldenrod',
+        },
+        itemStyles: {
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            marginBottom: '20x',
+            width: '30%',
+        },
+        imageStyles: {
+            width: '25%',
+            height: 'auto',
+            objectFit: 'cover',
+            borderRadius: '5px',
+            boxShadow: '0 0 5px rgba(0, 0, 0, 0.3)',
+        },
+        textStyles: {
+            textAlign: 'center',
+        },
+    };
     return (
-        <section id="about" style={styles.sectionStyles} className="section">
-            <div>
-                <h2>Hi! I'm Bailey</h2>
-                <img src={JobBoard} alt="Job Board Photo" />
-                <p>
-                    I am a creative and results-driven search engine optimization (SEO) strategist with a background in psychology and art history. With a Bachelor of Arts from Lawrence University and experience working with global appliance brands such as Whirlpool, Kitchenaid, Maytag, and JennAir, I have honed my skills in developing effective SEO strategies to attract organic traffic and build the marketing pipeline.
-
-                    My expertise in content marketing, keyword hierarchy, page optimization, meta data, and microcopy have helped me earn over 400 page one keyword rankings on Google, including 100+ head terms. I have also built organic content hubs to enhance user experience with tagging and filtering frameworks.
-
-                    Aside from my professional experience, I am passionate about empowering women and girls through fundraising, outreach, advocacy, and educational efforts as a board member of UN Women Chicago. I am also an instrument-rated pilot, exploring the country and enjoying the challenge of piloting antique single-engine aircraft in rural America.
-
-                    I am a firm believer in collaboration and am always looking for ways to mentor and educate colleagues. Let's connect and see how we can work together to achieve our goals.
-                </p>
+        <div id="portfolio" style={styles.portfolioStyles} className="portfolio">
+            <div style={styles.itemStyles}>
+                <a href="https://github.com/dannikaml/interactive-2" target="_blank">
+                    <h2 style={styles.titleStyles}>Bored of My Job Board</h2>
+                    <img src={JobImage} alt="Job Board Photo" style={styles.imageStyles} />
+                </a>
             </div>
-        </section>
+            <div style={styles.itemStyles}>
+                <a href="https://github.com/chwd31/Ride-or-Die-Cycling-App" target="_blank">
+                    <h2 style={styles.titleStyles}>Ride Or Die</h2>
+                    <img src={BicycleImage} alt="Ride Or Die App" style={styles.imageStyles} />
+                </a>
+            </div>
+            <div style={styles.itemStyles}>
+                <a href="https://github.com/skyeflier/women-in-aviation-blog" target="_blank">
+                    <h2 style={styles.titleStyles}>Women In Aviation Blog</h2>
+                    <img src={AviationImage} alt="Women In Aviation Blog" style={styles.imageStyles} />
+                </a>
+            </div>
+            <div style={styles.itemStyles}>
+                <a href="https://github.com/skyeflier/18-community-network" target="_blank">
+                    <h2 style={styles.titleStyles}>Community Network</h2>
+                    <img src={CommunityImage} alt="Community Network" style={styles.imageStyles} />
+                </a>
+            </div>
+            <div style={styles.itemStyles}>
+                <a href="https://github.com/skyeflier/13-in-and-out-inventory" target="_blank">
+                    <h2 style={styles.titleStyles}>In And Out Inventory</h2>
+                    <img src={InventoryImage} alt="In And Out Inventory" style={styles.imageStyles} />
+                </a>
+            </div>
+            <div style={styles.itemStyles}>
+                <a href="https://github.com/skyeflier/11-not-your-note-taker" target="_blank">
+                    <h2 style={styles.titleStyles}>Not Your Note Taker</h2>
+                    <img src={NoteImage} alt="Not Your Note Taker" style={styles.imageStyles} />
+                </a>
+            </div>
+        </div>
     );
 }
 

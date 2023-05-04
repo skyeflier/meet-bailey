@@ -16,8 +16,6 @@ const styles = {
     },
 };
 
-
-
 // We use JSX curly braces to evaluate the style object on the JSX tag
 
 function Resume() {
