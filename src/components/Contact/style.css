@@ -1,5 +1,8 @@
 .form {
   margin: 20px;
+  border: 5px;
+  border-color: rosybrown;
+  font-family: "'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif",
 }
 
 .form input {

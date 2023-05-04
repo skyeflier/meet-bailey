@@ -1,5 +1,4 @@
 import React from 'react';
-import '../../styles/Portfolio.css';
 import JobImage from './bored-of-my-job-board.jpg';
 import BicycleImage from './ride-or-die-app.jpg';
 import AviationImage from './women-in-aviation-blog.jpg';
@@ -14,8 +13,10 @@ function Portfolio() {
         portfolioStyles: {
             display: 'flex',
             flexWrap: 'wrap',
-            justifyContent: 'space-between',
+            justifyContent: 'space-evenly',
             backgroundColor: 'goldenrod',
+            addingTop: '20px',
+            paddingBottom: '20px',
         },
         itemStyles: {
             display: 'flex',
@@ -23,6 +24,7 @@ function Portfolio() {
             alignItems: 'center',
             marginBottom: '20x',
             width: '30%',
+            textAlign: 'center',
         },
         imageStyles: {
             width: '25%',
@@ -31,9 +33,13 @@ function Portfolio() {
             borderRadius: '5px',
             boxShadow: '0 0 5px rgba(0, 0, 0, 0.3)',
         },
-        textStyles: {
+        titleStyles: {
+            fontFamily: "'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif",
+            fontSize: '24px',
+            color: 'white',
+            textDecoration: 'none',
             textAlign: 'center',
-        },
+        }
     };
     return (
         <div id="portfolio" style={styles.portfolioStyles} className="portfolio">

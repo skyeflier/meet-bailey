@@ -1,37 +1,30 @@
 import React from 'react';
-import '../styles/Footer.css';
-
-// By importing the Footer.css file, it is added to the DOM whenever this component loads
-
-// We can also style a component inside of its JavaScript file by adding style properties to its rendered elements
-// Unlike regular HTML, a JSX style property must be an object instead of a string
-// On a style object, we camelCase all property names, and put all of the values in quotes
-// Non quoted values default to "pixels", e.g. height, margin, padding
-
-const styles = {
-    footerStyle: {
-        background: 'red',
-    },
-    headingStyle: {
-        fontSize: '100px',
-    },
-};
-
-// We use JSX curly braces to evaluate the style object
 
 function Footer() {
+    const styles = {
+        footerStyle: {
+            display: 'flex',
+            flexWrap: 'wrap',
+            alignItems: 'baseline',
+            justifyContent: 'space-evenly',
+            backgroundColor: 'teal',
+            paddingTop: '20px',
+            paddingBottom: '20px',
+        },
+        textStyle: {
+            fontFamily: "'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif",
+            fontSize: '24px',
+            color: 'white',
+            textDecoration: 'none',
+        }
+    }
     return (
         <footer style={styles.footerStyle} className="footer">
-            <div>
-                <h1 style={styles.headingStyle}>Welcome</h1>
-                <p>
-                    GitHub
-                    LinkedIn
-                    Email
-                </p>
-            </div>
+            <a href="#https://github.com/skyeflier" style={styles.textStyle}>GitHub</a>
+            <a href="#https://www.linkedin.com/in/baileyreiners/" style={styles.textStyle}>LinkedIn</a>
+            <a href="#mailto:baileyreiners26@gmail.com" style={styles.textStyle}>Email</a>
         </footer>
-    );
-}
+    )
+};
 
 export default Footer;

@@ -1,29 +1,29 @@
 import React from 'react';
-import '../../styles/Navbar.css';
-
-// By importing the Navbar.css file, it is added to the DOM whenever this component loads
-
-// We can also style a component inside of its JavaScript file by adding style properties to its rendered elements
-// Unlike regular HTML, a JSX style property must be an object instead of a string
-// On a style object, we camelCase all property names, and put all of the values in quotes
-// Non quoted values default to "pixels", e.g. height, margin, padding
-
-const styles = {
-    navbarStyle: {
-        background: 'blue',
-        justifyContent: 'flex-end',
-    },
-};
-
-// We use JSX curly braces to evaluate the style object on the JSX tag
 
 function Navbar() {
+    const styles = {
+        navbarStyle: {
+            display: 'flex',
+            flexWrap: 'wrap',
+            alignItems: 'baseline',
+            justifyContent: 'space-evenly',
+            backgroundColor: 'teal',
+            addingTop: '20px',
+            paddingBottom: '20px',
+        },
+        textStyle: {
+            fontFamily: "'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif",
+            fontSize: '24px',
+            color: 'white',
+            textDecoration: 'none',
+        }
+    }
     return (
         <nav style={styles.navbarStyle} className="navbar">
-            <a href="#about">About</a>
-            <a href="#resume">Resume</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#contact">Contact</a>
+            <a href="#about" style={styles.textStyle}>About</a>
+            <a href="#resume" style={styles.textStyle}>Resume</a>
+            <a href="#portfolio" style={styles.textStyle}>Portfolio</a>
+            <a href="#contact" style={styles.textStyle}>Contact</a>
         </nav>
     );
 }

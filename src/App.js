@@ -1,14 +1,14 @@
 import React from "react";
 // import HomePage from './HomePage';
 import Header from './components/Header/Header';
-// import Navbar from './components/Header/Navbar'; //?? DO I IMPORT THIS?
+// import Navbar from './components/Header/Navbar';
 
 import About from './components/About';
 import Contact from './components/Contact/index';
 import Resume from './components/Resume';
 import Portfolio from './components/Portfolio/Portfolio';
 // import Project from './components/Portfolio/Project';
-import Footer from './components/Footer'; // ?? DON'T THINK I IMPORT THIS
+import Footer from './components/Footer';
 
 // import Route from './components/Route';
 
@@ -21,7 +21,7 @@ function App() {
             <Resume />
             <Portfolio />
             <Footer />
-        </div>
+        </div >
     )
 }
 
