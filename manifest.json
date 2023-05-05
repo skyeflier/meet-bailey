@@ -1,0 +1,45 @@
+{
+  "short_name": "Bailey Resume",
+  "name": "Meet Bailey - Resume",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "bored-of-my-job-board.jpg",
+      "type": "image/jpg",
+      "sizes": "1500x1500"
+    },
+    {
+      "src": "community-network.jpg",
+      "type": "image/jpg",
+      "sizes": "1500x1500"
+    },
+    {
+      "src": "in-and-out-inventory.jpg",
+      "type": "image/jpg",
+      "sizes": "1500x1500"
+    },
+    {
+      "src": "not-your-note-taker.jpg",
+      "type": "image/jpg",
+      "sizes": "1500x1500"
+    },
+    {
+      "src": "ride-or-die-app.jpg",
+      "type": "image/jpg",
+      "sizes": "1500x1500"
+    },
+    {
+      "src": "women-in-aviation-blog.jpg",
+      "type": "image/jpg",
+      "sizes": "1500x1500"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
