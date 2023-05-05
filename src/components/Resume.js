@@ -6,6 +6,8 @@ import Reiners_Resume from '../Reiners_Resume.pdf';
 function Resume() {
     const styles = {
         sectionStyles: {
+            fontFamily: "'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif",
+            fontSize: '14px',
             backgroundColor: 'rosybrown',
             paddingTop: '20px',
             paddingBottom: '20px',

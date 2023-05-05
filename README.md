@@ -33,6 +33,8 @@ Open your web browser and go to http://localhost:3000 to view the portfolio.
 ## Usage
 To use this portfolio, click on the navigation titles to view the corresponding sections of the portfolio. The About Me section includes a recent photo or avatar of the developer and a short bio about them. The Portfolio section includes titled images of six of the developer's applications with links to both the deployed applications and the corresponding GitHub repository. The Contact section includes a contact form with fields for a name, an email address, and a message. The Resume section includes a link to a downloadable resume and a list of the developer's proficiencies.
 
+![screenshot](./public/screenshot.png)
+
 ## Credits
 This project was built by Bailey.
 
