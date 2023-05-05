@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/static/css/main.546cdf95.css",
+    "main.js": "/static/js/main.3a124f9e.js",
+    "static/media/community-network.jpg": "/static/media/community-network.9a20af528ab05d657ce2.jpg",
+    "static/media/not-your-note-taker.jpg": "/static/media/not-your-note-taker.a59b852682427ce39c16.jpg",
+    "static/media/bitmoji-of-manic-woman-coding.png": "/static/media/bitmoji-of-manic-woman-coding.63c79f54489d0d8d7b01.png",
+    "static/media/ride-or-die-app.jpg": "/static/media/ride-or-die-app.951c5448937b1e15465c.jpg",
+    "static/media/women-in-aviation-blog.jpg": "/static/media/women-in-aviation-blog.42fe704cff037c4bf20a.jpg",
+    "static/media/bored-of-my-job-board.jpg": "/static/media/bored-of-my-job-board.2c37022d5ca4cffb43d7.jpg",
+    "static/media/in-and-out-inventory.jpg": "/static/media/in-and-out-inventory.62eec047ecc824539ad3.jpg",
+    "static/media/Reiners_Resume.pdf": "/static/media/Reiners_Resume.aa406932d3affda248ca.pdf",
+    "index.html": "/index.html",
+    "main.546cdf95.css.map": "/static/css/main.546cdf95.css.map",
+    "main.3a124f9e.js.map": "/static/js/main.3a124f9e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.546cdf95.css",
+    "static/js/main.3a124f9e.js"
+  ]
+}
