@@ -1,5 +1,5 @@
 import React from "react";
-// import HomePage from './HomePage';
+import Home from './components/Home';
 import Header from './components/Header/Header';
 // import Navbar from './components/Header/Navbar';
 
@@ -15,6 +15,7 @@ import Footer from './components/Footer';
 function App() {
     return (
         <div>
+            <Home />
             <Header />
             <About />
             <Contact />

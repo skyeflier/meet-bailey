@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
-// import HomePage from './HomePage';
+import Home from './components/Home';
 // import Header from './Header/Header';
 // import Header from './Header/Navbar'; //?? DO I IMPORT THIS?
 
@@ -18,7 +18,7 @@ function App() {
     return (
         <BrowserRouter>
             <Switch>
-                {/* <Route exact path="/" component={HomePage} /> */}
+                <Route exact path="/" component={Home} />
                 <Route path="/about" component={About} />
                 <Route path="/contact" component={Contact} />
                 <Route path="/resume" component={Resume} />
