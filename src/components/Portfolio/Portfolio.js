@@ -1,4 +1,5 @@
 import React from 'react';
+import MomentumImage from './momentum.png';
 import JobImage from './bored-of-my-job-board.jpg';
 import BicycleImage from './ride-or-die-app.jpg';
 import AviationImage from './women-in-aviation-blog.jpg';
@@ -42,6 +43,13 @@ function Portfolio() {
     };
     return (
         <div id="portfolio" style={styles.portfolioStyles} className="portfolio">
+            <div style={styles.itemStyles}>
+                <section>
+                    <h2 style={styles.titleStyles}><a href="https://momentum-v1.herokuapp.com/" target="_blank">Momentum: Subscription App</a></h2>
+                    <h3 style={styles.titleStyles}><a href="https://github.com/skyeflier/momentum" target="_blank">GitHub Repository</a></h3>
+                    <img src={MomentumImage} alt="Momentum" style={styles.imageStyles} />
+                </section>
+            </div>
             <div style={styles.itemStyles}>
                 <section>
                     <h2 style={styles.titleStyles}><a href="https://bored-of-my-job-board.herokuapp.com/" target="_blank">Bored of My Job Board</a></h2>
